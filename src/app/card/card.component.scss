@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import "../../assets/variables.scss";
+
+@mixin card(){
+  width: 40vh;
+  border-radius: 5%;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+
+.top {
+  @include card;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bottom {
+  @include card;
+  margin-top: 2vh;
+  background-color: white;
+  padding: 3vh;
+}
+
+.title{
+  font-family: $title-font;
+}
+
+.description{
+  color: dimgrey;
+  text-align: justify;
+}
+
+.info{
+  color: #0A814A;
+}
+
+

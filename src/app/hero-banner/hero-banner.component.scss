@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import "../../assets/variables.scss";
+
+.hero-banner{
+  @media  (max-width: 576px){
+    padding: 5vh;
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    padding: 5vh;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    padding: 10vh;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    padding: 15vh;
+  }
+
+  .title{
+    font-family: $title-font;
+    font-size: 5vh;
+    .primary {
+      color: $title-color-1;
+    }
+    .secondary {
+      color: $title-color-2;
+    }
+  }
+  .sub-text{
+    color: dimgrey;
+    text-align: justify;
+  }
+}
