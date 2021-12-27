@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Category} from "../entities/Category";
 
 @Component({
   selector: 'app-card-display',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-display.component.scss']
 })
 export class CardDisplayComponent implements OnInit {
+  @Input() collection: Category[] = [];
 
   constructor() { }
 

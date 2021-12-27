@@ -9,6 +9,7 @@ import {MatIconModule} from "@angular/material/icon";
 import { HeroBannerComponent } from './hero-banner/hero-banner.component';
 import { CardComponent } from './card/card.component';
 import { CardDisplayComponent } from './card-display/card-display.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CardDisplayComponent } from './card-display/card-display.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

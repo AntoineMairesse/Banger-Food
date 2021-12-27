@@ -1,13 +1,14 @@
 <div class="main">
   <div>
-    <div class="top" style="background-image: url({{ bgImage }})"></div>
+    <div class="top">
+      <img src="{{bgImage}}">
+    </div>
     <div class="bottom">
-      <p class="title">Pizza Pepperoni</p>
+      <p class="title">{{ title }}</p>
       <p class="description">
-        Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since
-        prehistoric times.[1] Beef is a source of high-quality protein and essential nutrients.[2]
+        {{ (description.length>256)? (description | slice:0:256)+'..':(description) }}
       </p>
-      <p class="info">Voir tous les plats</p>
+      <p class="info">See all dishes</p>
     </div>
   </div>
 </div>

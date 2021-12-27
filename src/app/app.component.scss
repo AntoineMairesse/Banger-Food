@@ -1,12 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 @import "../assets/variables.scss";
 
-.title{
+.title {
   font-family: $title-font;
+
   .primary {
     color: $title-color-1;
   }
+
   .secondary {
     color: $title-color-2;
   }
 }
+
+.hero-text {
+  font-family: $title-font;
+  color: $title-color-1;
+  text-align: center;
+
+  @media (max-width: 576px) {
+    font-size: 4vh;
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    font-size: 5vh;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    font-size: 6vh;
+  }
+}
+
+

@@ -16,7 +16,10 @@
 </mat-toolbar>
 
 <app-hero-banner></app-hero-banner>
-<app-card-display></app-card-display>
+<div class="container">
+  <p class="hero-text">Meal Categories :</p><br><br><br><br>
+</div>
+<app-card-display [collection]="mealDB.categories" ></app-card-display>
 
 <footer class="bg-light text-center text-lg-start">
   <!-- Copyright -->
